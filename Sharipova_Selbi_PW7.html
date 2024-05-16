@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharipova_PW7</title>
+	 <style>
+        body {
+            background-color: #cc90fd;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            display: flex;
+        }
+        form {
+            background-color: #000000;
+            padding: 23px;
+            border-radius: 6px;
+            color: aliceblue;
+        }
+        label {
+            display: block;
+            margin-bottom: 13px;
+        }
+        input, select {
+            width: 90%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: #a61bf7;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #720388;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        output {
+            display: block;
+            margin-top: 23px;
+            font-weight: bold;
+           
+        }
+    </style>
+    <script>
+        // Function to perform basic arithmetic calculations
+        function calculate(num1, operator, num2) {
+            switch(operator) {
+                case '+':
+                    return num1 + num2;
+                case '-':
+                    return num1 - num2;
+                case '*':
+                    return num1 * num2;
+                case '/':
+                    if(num2 !== 0) {
+                        return num1 / num2;
+                    } else {
+                        return "Error: Division by zero is not allowed.";
+                    }
+                default:
+                    return "Error: Invalid operator.";
+            }
+        }
+
+        // Function to handle calculation based on user input
+        function performCalculation() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var operator = document.getElementById('operator').value;
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var result = calculate(num1, operator, num2);
+            document.getElementById('result').textContent = "The result is: " + result;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="num1">First Number:</label>
+        <input type="number" id="num1" value="0"><br><br>
+
+        <label for="operator">Operator:</label>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br><br>
+
+        <label for="num2">Second Number:</label>
+        <input type="number" id="num2" value="0"><br><br>
+
+        <button type="button" onclick="performCalculation()">Calculate</button>
+        <button type="reset">Reset</button><br><br>
+
+        <output id="result"></output>
+    </form>
+</body>
+</html>

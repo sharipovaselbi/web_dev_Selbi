@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sharipova_Selbi_PW4</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+ <style>
+      * {
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        margin: 0px;
+        padding: 10px;
+        font-weight: 400;
+    }
+	}
+    .block1{
+        background-color: rgb(97, 173, 216);
+        text-align: center;
+        color:white;
+        padding:25px;
+    }
+	article> h2 {
+    font-weight: bold;
+    }
+    article > strong {
+    font-weight: bold;
+    }
+    ::selection {
+            background-color: brightred; 
+            color: brown; 
+        }
+    table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+          tr:nth-child(even) {
+            background-color: yellow;
+        }
+
+         tr:nth-child(odd) {
+            background-color:red;
+        }
+        td:last-child {
+            color: brown;
+        }
+        p::first-letter {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color:red;
+           }
+       p:is(.pur) {
+            color: purple; /* Set text color to blue */
+        }     
+            
+            
+        ul li:nth-child(even) {
+            background-color: pink;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: purple;
+        }
+        ul {list-style: none;}
+        li::before {
+            content: "*"; 
+            padding-right: 4px; /* Add space between arrow and text */
+            color: orange; 
+        }
+        
+     h1:hover {
+            background-color: rgb(107, 106, 106);
+        }
+        h2:hover {
+            background-color: rgb(136, 135, 135);
+        }
+        p:hover {
+            background-color: rgb(168, 166, 166);
+        }
+        
+      header > h1 {
+        font-weight: bold;
+        
+    }
+    
+    article > h1 {
+        font-weight: bold;
+    }
+
+    article > h2 {
+        font-weight:bold;
+    }
+
+    article  > h3 {
+        font-weight: bold;
+    }
+
+    article  > h4 {
+        font-weight: bold;
+    }
+
+    article  > h5 {
+        font-weight: bold;
+    }
+
+    article  > h6 {
+        font-weight: bold;
+    }
+    
+    h3+p{
+    
+    font-weight: bold;
+    }
+    </style>
+</head>
+<body id="top">
+  <main>
+    <section id="text">
+      <header>
+        <h1>Text</h1>
+      </header>
+      <article id="text__headings">
+        <header>
+          <h1>Headings</h1>
+        </header>
+        
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+        
+        <footer>
+          <p><a href="#top">[Top]</a></p>
+        </footer>
+      </article>
+      <article id="text__paragraphs">
+        <h2>Answers to the Questions:</h2>
+                <h3>What is selector's specificity and how it's calculated?</h3>
+                <p> Selector specificity is a CSS rule's application when multiple rules conflict with the same element. It's calculated using four values: inline styles, IDs, classes and attributes, and elements and pseudo-elements, with weights added.</p>
+                <h3>What are complex selectors?</h3>
+                <p> Complex selectors combine simple selectors to target specific elements based on their relationship to other elements in the HTML structure, including descendant, child, adjacent sibling, and general sibling selectors.</p>
+                <h3>What is the difference between pseudo-classes and pseudo-elements?</h3>
+                <p> Pseudo-classes and pseudo-elements are used to select elements based on specific conditions, with pseudo-classes affecting element positions like :hover, while pseudo-elements style specific parts of an element, indicated by double or single colons in CSS3.</p>
+        
+        <footer>
+          <p><a href="#top">[Top]</a></p>
+        </footer>
+        <header>
+          <h1>Paragraphs</h1>
+        </header>
+        
+          <p class="pur">A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit
+            of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more
+            sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of
+            formal writing, used to organize longer prose.</p>
+      
+      </article>
+      <article id="text__blockquotes">
+        <header>
+          <h1>Blockquotes</h1>
+        </header>
+        
+          <blockquote>
+            <p class="pur">A block quotation (also known as a long quotation or extract) is a quotation in a written document,
+              that is set off from the main text as a paragraph, or block of text.</p>
+            <p class="pur">It is typically distinguished visually using indentation and a different typeface or smaller size
+              quotation. It may or may not include a citation, usually placed at the bottom.</p>
+            <cite><a href="#!">Said no one, ever.</a></cite>
+          </blockquote>
+        
+        <footer>
+          <p><a href="#top">[Top]</a></p>
+        </footer>
+      </article>
+      <article id="text__lists">
+        <header>
+          <h1>Lists</h1>
+        </header>
+        
+          <h3>Definition list</h3>
+          <dl>
+            <dt>Definition List Title</dt>
+            <dd>This is a definition list division.</dd>
+          </dl>
+          <h3>Ordered List</h3>
+          <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+          </ol>
+          <h3>Unordered List</h3>
+          <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+          </ul>
+       
+        <footer>
+          <p><a href="#top">[Top]</a></p>
+        </footer>
+      </article>
+      <article id="text__hr">
+        <header>
+          <h1>Horizontal rules</h1>
+        </header>
+        
+          <hr>
+        
+        <footer>
+          <p><a href="#top">[Top]</a></p>
+        </footer>
+      </article>
+      <article id="text__tables">
+        <header>
+          <h1>Tabular data</h1>
+        </header>
+        <table>
+          <caption>Table Caption</caption>
+          <tbody>
+            <tr>
+              <td>Table Heading 1</td>
+              <td>Table Heading 2</td>
+              <td>Table Heading 3</td>
+              <td>Table Heading 4</td>
+              <td>Table Heading 5</td>
+            </tr>
+          
+          
+            <tr>
+              <td>Table Cell 1</td>
+              <td>Table Cell 2</td>
+              <td>Table Cell 3</td>
+              <td>Table Cell 4</td>
+              <td>Table Cell 5</td>
+            </tr>
+            <tr>
+              <td>Table Cell 1</td>
+              <td>Table Cell 2</td>
+              <td>Table Cell 3</td>
+              <td>Table Cell 4</td>
+              <td>Table Cell 5</td>
+            </tr>
+            <tr>
+              <td>Table Cell 1</td>
+              <td>Table Cell 2</td>
+              <td>Table Cell 3</td>
+              <td>Table Cell 4</td>
+              <td>Table Cell 5</td>
+            </tr>
+            <tr>
+              <td>Table Cell 1</td>
+              <td>Table Cell 2</td>
+              <td>Table Cell 3</td>
+              <td>Table Cell 4</td>
+              <td>Table Cell 5</td>
+            </tr>
+          
+          
+            <tr>
+              <td>Table Footer 1</td>
+              <td>Table Footer 2</td>
+              <td>Table Footer 3</td>
+              <td>Table Footer 4</td>
+              <td>Table Footer 5</td>
+            </tr>
+          </tbody>
+        </table>
+        <footer>
+          <p><a href="#top">[Top]</a></p>
+        </footer>
+      </article>
+      <article id="text__code">
+        <header>
+          <h1>Code</h1>
+        </header>
+        
+          <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
+          <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
+          <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
+          <h2>Pre-formatted text</h2>
+          <pre>P R E F O R M A T T E D T E X T
+! " # $ % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~ </pre>
+        
+        <footer>
+          <p><a href="#top">[Top]</a></p>
+        </footer>
+      </article>
+      <article id="text__inline">
+        <header>
+          <h1>Inline elements</h1>
+        </header>
+        <div>
+          <p><a href="#!">This is a text link</a>.</p>
+          <p><strong>Strong is used to indicate strong importance.</strong></p>
+          <p><em>This text has added emphasis.</em></p>
+          <p>The <b>b element</b> is stylistically different text from normal text, without any special importance.
+          </p>
+          <p>The <i>i element</i> is text that is offset from the normal text.</p>
+          <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.
+          </p>
+          <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
+          <p><s>This text has a strikethrough</s>.</p>
+          <p>Superscript<sup>®</sup>.</p>
+          <p>Subscript for things like H<sub>2</sub>O.</p>
+          <p><small>This small text is small for for fine print, etc.</small></p>
+          <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+          <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline
+              quotation.</q></p>
+          <p><cite>This is a citation.</cite></p>
+          <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+          <p>The <mark>mark element</mark> indicates a highlight.</p>
+          <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+          <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
+        </div>
+        <footer>
+          <p><a href="#top">[Top]</a></p>
+        </footer>
+      </article>
+      <article id="text__comments">
+        <header>
+          <h1>HTML Comments</h1>
+        </header>
+        
+          <p>There is comment here:
+            <!--This comment should not be displayed-->
+          </p>
+          <p>There is a comment spanning multiple tags and lines below here.</p>
+          <!--<p><a href="#!">This is a text link. But it should not be displayed in a comment</a>.</p>
+            <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
+            <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
+        
+        <footer>
+          <p><a href="#top">[Top]</a></p>
+        </footer>
+      </article>
+    </section>
+
+  </main>
+</body>
+</html>
